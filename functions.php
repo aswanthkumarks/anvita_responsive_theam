@@ -9,6 +9,9 @@ function wpbootstrap_scripts_with_jquery()
 }
 add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 
+register_nav_menu( 'primary', __( 'Navigation Menu', 'anvitaresponsive' ) );
+
+
 if ( function_exists('register_sidebar') )
 	register_sidebar(array(
 		'before_widget' => '',

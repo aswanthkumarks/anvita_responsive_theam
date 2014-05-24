@@ -38,9 +38,9 @@
           </a>
           <a class="brand" href="#">Project name</a>
           <div class="nav-collapse collapse">
-            <ul class="nav">
-             <?php wp_list_pages(array('title_li' => '')); ?> 
-            </ul>
+            
+            <?php wp_nav_menu( array( 'container_class' => 'menu-header','menu_class'      => 'nav navbar-nav', 'theme_location' => 'primary' ) ); ?>
+           
             <form class="navbar-form pull-right">
               <input class="span2" type="text" placeholder="Email">
               <input class="span2" type="password" placeholder="Password">
